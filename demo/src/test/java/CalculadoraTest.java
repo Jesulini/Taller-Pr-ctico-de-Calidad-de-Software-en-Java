@@ -33,4 +33,15 @@ public class CalculadoraTest {
         });
         assertEquals("Division por cero no permitida.", exception.getMessage());
         }
+
+
+    @Test
+public void testSumarConLetras() {
+    Exception exception = assertThrows(NumberFormatException.class, () -> {
+        calc.sumar("a", "b");
+    });
+    assertTrue(exception.getMessage().contains("For input string"));
+}
+
+
 }

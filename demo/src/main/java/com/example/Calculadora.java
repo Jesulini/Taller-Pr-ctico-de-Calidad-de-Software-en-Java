@@ -19,4 +19,8 @@ public class Calculadora {
         }
         return (double) a / b;
     }
+
+    public int sumar(String a, String b) {
+        return Integer.parseInt(a) + Integer.parseInt(b);
+    }
 }
